@@ -8,18 +8,18 @@ import Footer from './components/Footer'
 import Socials from './components/Socials'
 
 function App() {
-
+  const[page , setPage] = useState('hero')
   return (
     <section className=''>
       <div className='bg-zinc-900'>
         <Router>
-          <Navbar />
+          <Navbar setPage={setPage} page={page} />
           <Routes>
             <Route exact path="/" element={<Hero />} />
             <Route path="/about" element={<About />} />
             <Route path="/hire" element={<HiringForm />}/>
           </Routes>
-          <Footer/>
+          <Footer setPage={setPage} />
         </Router>
       </div>
     </section>

@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 
-export default function Navbar() {
+export default function Navbar(props) {
     const[showResume, setShowResume] = useState(false)
-    const[page , setPage] = useState('hero')
+    const{page , setPage} = props
+
+    
 
     function handleScroll(){
         let scroll = window.scrollY

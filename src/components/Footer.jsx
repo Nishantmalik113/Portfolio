@@ -1,7 +1,9 @@
 import React from 'react'
 import { socials } from '../utils'
 
-export default function Footer() {
+export default function Footer(props) {
+
+    const {setPage} = props
 
     let today = new Date()
     let hrs 
