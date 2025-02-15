@@ -8,7 +8,7 @@ export default function Project(props) {
     <section className='project hero bg-[#242428] border-1 border-[rgba(255,255,255,0.5)] w-fit p-2.5 rounded-xl'>
       <a target='black' href={link}
        id={id}
-       className='project_card bg-zinc-800 border-1 border-[rgba(255,255,255,0.2)] transition duration-1000 flex flex-col gap-10 md:px-30 px-10 pt-5 rounded-xl' 
+       className='project_card bg-zinc-800 border-1 border-[rgba(255,255,255,0.2)] transition duration-1000 flex flex-col gap-5 sm:gap-10 md:px-30 px-5 pt-5 rounded-xl' 
        onMouseMove={()=>{
         let project = document.getElementById(`${id}`)
         project.style.background= `${color}`
