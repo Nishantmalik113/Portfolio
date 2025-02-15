@@ -10,12 +10,12 @@ import Socials from './components/Socials'
 function App() {
   const[page , setPage] = useState('hero')
   return (
-    <section className=''>
+    <section>
       <div className='bg-zinc-900'>
         <Router>
           <Navbar setPage={setPage} page={page} />
           <Routes>
-            <Route exact path="/" element={<Hero />} />
+            <Route exact path="/" element={<Hero setPage={setPage}/>} />
             <Route path="/about" element={<About />} />
             <Route path="/hire" element={<HiringForm />}/>
           </Routes>

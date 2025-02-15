@@ -13,3 +13,4 @@ export const tech_stack =[
     {'name':'Python', 'logo':'../tech_stack/python.png', 'color':'rgba(4, 255, 0, 0.3)'},
     {'name':'MySQL', 'logo':'../tech_stack/sql.png', 'color':'rgba(255, 111, 0, 0.3)'}
 ]
+
