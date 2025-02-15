@@ -45,13 +45,13 @@ export default function Footer(props) {
                 <a href="/#/hire" onClick={()=>{setPage('hire')}} >Hire Me</a>
             </div>
         </div>
-        <div className='grid grid-cols-2 px-10 justify-arounds'>
+        <div className='grid sm:grid-cols-2 px-10 gap-5 justify-arounds'>
             <h3 className='footer-heading text-left'><b>©</b> 2025
                 Nishant Malik
             </h3>
-            <div className='time_location text-right flex flex-col sm:justify-between gap-5'>
+            <div className='time_location sm:text-right flex flex-col sm:justify-between gap-2'>
                 <p>Local Time - <b>{hrs}:{min} {timestamp}</b> </p>
-                <div className='flex items-center justify-between'>
+                <div className='flex flex-col smitems-center justify-between'>
                     <div></div>
                     <table className='w-fit'>
                         <tbody>
