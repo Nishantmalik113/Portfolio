@@ -51,7 +51,7 @@ export default function Footer(props) {
             </h3>
             <div className='time_location sm:text-right flex flex-col sm:justify-between gap-2'>
                 <p>Local Time - <b>{hrs}:{min} {timestamp}</b> </p>
-                <div className='flex flex-col smitems-center justify-between'>
+                <div className='flex justify-between flex-col sm:flex-row '>
                     <div></div>
                     <table className='w-fit'>
                         <tbody>
