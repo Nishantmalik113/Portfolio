@@ -4,7 +4,7 @@ export default function About(props) {
 
   const {setPage} = props
   setPage('about')
-
+  window.scrollTo(0,0)
 
   return (
     <section className='about flex flex-col items-center bg-[radial-gradient(circle_at_50%_0,#3F3F47,_#18181B_70%)]'> 
@@ -12,7 +12,11 @@ export default function About(props) {
         <h1 className='Header my-10 mb-30'>I'm Nishant.</h1> 
       </div>
       <div className='ME px-10 grid sm:grid-cols-2 gap-5 sm:gap-0 pb-10 sm:pb-30 items-center justify-center'>
-        <div className=' flex flex-col sm:items-center justify-center'><div className='img-box h-full px-2 pt-10 rounded-t-[45%] bg-slate-500 flex flex-col items-center justify-center'><img src="../about/ME.png" alt=""className='max-w-[350px]' /></div></div>
+        <div className=' flex flex-col sm:items-center justify-center'>
+          <div className='img-box h-full px-2 pt-10 rounded-t-[45%] bg-slate-500 flex flex-col items-center justify-center'>
+            <img src="../about/ME(1).png" alt=""className='max-w-[350px]' />
+          </div>
+        </div>
         <div className='intro flex flex-col sm:gap-0 gap-5 items-center h-full justify-between'>
           <h3>I'm a self-taught Frontend Developer working globally, from India.</h3>
           <p>👋 Hi there! I'm a passionate extrovert who loves building things with code. I'm very curious about AI, Saas and cleaner UI! This is my personal space where I share my thoughts, projects and a bit about my journey.</p>
