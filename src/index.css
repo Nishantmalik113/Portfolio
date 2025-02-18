@@ -267,6 +267,12 @@ h1,h2,h3{
   letter-spacing: -2px;
 }
 
+.project,
+.project-cards,
+.project_card{
+  overflow: hidden;
+}
+
 .project .project-png{
   border-radius: 10px 10px 0px 0px;
   box-shadow: 0 15px 23px rgba(0,0,0,0.35),
