@@ -327,6 +327,10 @@ h1,h2,h3{
   overflow: hidden;
 }
 
+.about .img-box{
+  overflow: hidden;
+}
+
 .about .img-box img:hover{
   cursor: var(--app-cursor-yo), auto;
   transform: scale(1.05);
