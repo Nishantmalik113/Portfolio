@@ -7,7 +7,7 @@ export default function About(props) {
   window.scrollTo(0,0)
 
   return (
-    <section className='about flex flex-col items-center bg-[radial-gradient(circle_at_50%_0, #3F3F47, #18181B 0%)]'> 
+    <section className='about flex flex-col items-center bg-[radial-gradient(circle at 50% , #3F3F47, #18181B )]'> 
       <div className='px-10 mt-50'>
         <h1 className='Header my-10 mb-30'>I'm Nishant.</h1> 
       </div>

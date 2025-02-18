@@ -16,7 +16,7 @@ export default function Hero(props) {
   }, []);
   
   return (
-    <section  className='px-10 flex flex-col gap-5 sm:gap-30 items-center justify-center bg-[radial-gradient(circle_at_50%_0, #3F3F47, #18181B 0%)]'>
+    <section  className='px-10 flex flex-col gap-5 sm:gap-30 items-center justify-center bg-[radial-gradient(circle at 50% , #3F3F47, #18181B)]'>
         <WelcomePage/>
         <div className='absolute hero top-[110vh] md:top-[90vh] left-[10vh] md:left-[20vh] z-20 bg-gradient-to-bl'><img alt="square" loading="lazy" width="96" height="96" decoding="async" data-nimg="1" src="../square.svg" /></div>
         <div className='absolute hero top-[130vh] md:top-[110vh] left-0 z-20 bg-gradient-to-bl'><img alt="square" loading="lazy" width="96" height="96" decoding="async" data-nimg="1" src="../square.svg" /></div>
