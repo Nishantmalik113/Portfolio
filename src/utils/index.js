@@ -14,3 +14,14 @@ export const tech_stack =[
     {'name':'MySQL', 'logo':'../tech_stack/sql.png', 'color':'rgba(255, 111, 0, 0.3)'}
 ]
 
+export const greeting = [
+    {'Hello':'Hello'},
+    {'Hello':'Bonjour'},
+    {'Hello':'Ciao'},
+    {'Hello':'Ol\xe0'},
+    {'Hello':'स्वागत हे'},
+    {'Hello':'سلام'},
+    {'Hello':'やあ'},
+    {'Hello':'Hallo'},
+    {'Hello':'Hall\xe5'}
+]

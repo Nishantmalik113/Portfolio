@@ -24,11 +24,10 @@ export default function Navbar(props) {
     
   return (
     <section className='flex flex-col items-center justify-center px-10'>
-        <div id='navbar' className='navbar flex gap-1 sm:gap-5 items-center justify-around
-    p-4 my-5'>
-            <a href="/#/" onClick={()=>{setPage('hero')}} className={(page==='hero')? 'bg-[rgba(255,255,255,0.1)]' :''}>Home</a>
-            <a href="/#/about" onClick={()=>{setPage('about')}} className={(page==='about')? 'bg-[rgba(255,255,255,0.1)]' :''}>About</a>
-            <a href="/#/hire" onClick={()=>{setPage('hire')}} className={(page==='hire')? 'bg-[rgba(255,255,255,0.1)]' :''}>Hire Me</a>
+        <div id='navbar' className='navbar flex gap-1 sm:gap-5 items-center justify-around p-4 my-5'>
+           <a href="/#" className={(page==='hero')? 'bg-[rgba(255,255,255,0.1)]' :''}>Home</a>
+            <a href="/#/about" className={(page==='about')? 'bg-[rgba(255,255,255,0.1)]' :''}>About</a>
+            <a href="/#/hire" className={(page==='hire')? 'bg-[rgba(255,255,255,0.1)]' :''}>Hire Me</a>
             {showResume && (<div className='border-l-3 border-black h-full'></div>)}
             {showResume && (<a className='resumebtn bg-radial from-slate-600 from-60% to-white' target='black' href="../docs/resume.pdf">Resume</a>)}
             </div>

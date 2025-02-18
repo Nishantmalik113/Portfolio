@@ -5,24 +5,32 @@ import HiringForm from './components/HiringForm'
 import About from './components/About'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
-import Socials from './components/Socials'
+import PreLoader from './components/PreLoader'
 
 function App() {
   const[page , setPage] = useState('hero')
+  const[loading, setLoading] = useState(true)
+  setTimeout(()=>{
+    setLoading(false)
+  },3000)
+
   return (
-    <section>
+    <>
+    {loading &&(<PreLoader/>)}
+    {!loading &&(<section>
       <div className='bg-zinc-900'>
         <Router>
           <Navbar setPage={setPage} page={page} />
           <Routes>
             <Route exact path="/" element={<Hero setPage={setPage}/>} />
-            <Route path="/about" element={<About />} />
-            <Route path="/hire" element={<HiringForm />}/>
+            <Route path="/about" element={<About setPage={setPage}/>} />
+            <Route path="/hire" element={<HiringForm setPage={setPage}/>}/>
           </Routes>
           <Footer setPage={setPage} />
         </Router>
       </div>
-    </section>
+    </section>)}
+    </>
   )
 }
 

@@ -18,7 +18,7 @@ export default function Footer(props) {
 
 
   return (
-    <section className='footer flex flex-col gap-5 p-10'>
+    <section className='footer flex flex-col gap-5  pb-10 mt-20 border-t-1 border-zinc-700'>
         <div className='p-10 grid grid-cols-1 sm:grid-cols-2 gap-10 justify-around'>
             <div className='footer_paragraph flex flex-col gap-5 text-left'>
                 <h3>Curious?</h3>
