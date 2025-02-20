@@ -87,9 +87,22 @@ h1,h2,h3{
   width: 6rem;
 }
 .overlay{
-  -webkit-animation: show-overlay 1s ease-in;
-  animation: show-overlay 1s ease-in;
+  -webkit-animation: show-overlay 4s ease-in-out;
+  animation: show-overlay 4s ease-in-out;
+  height: 200vw;
+  width: 200vw;
   
+}
+.noise-overlay {
+  z-index: 399;
+  mix-blend-mode: overlay;
+  background-image: url(../noise.png);
+  background-position: 0 0;
+  background-size: 200px;
+  display: block;
+  position: absolute;
+  inset: 0;
+  pointer-events: none
 }
 
 @keyframes show-overlay {
@@ -97,9 +110,13 @@ h1,h2,h3{
     top: 100vh;
     border-radius: 50%;
   }
+  62.5%{
+    top: 100vh;
+    border-radius: 50%;
+  }
   100%{
-    top: 0vh;
-    border-radius: 0;
+    top: -30vh;
+    border-radius: 50%;
   }
 }
 
@@ -456,6 +473,14 @@ h1{
 
 h2{
   font-size: 2.5rem;
+}
+
+.overlay{
+  -webkit-animation: show-overlay 4s ease-in-out;
+  animation: show-overlay 4s ease-in-out;
+  height: 200vh;
+  width: 200vh;
+  
 }
 
 .footer .footer_paragraph h3{

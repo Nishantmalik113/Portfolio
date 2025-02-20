@@ -23,7 +23,8 @@ export default function About(props) {
   })
 
   return (
-    <section className='about flex flex-col items-center bg-[radial-gradient(circle at 50% , #3F3F47, #18181B )]'> 
+    <section className='about flex flex-col relative items-center bg-[radial-gradient(circle at 50% , #3F3F47, #18181B )]'> 
+      <div className='noise-overlay opacity-[0.5]'></div>
       <div className='px-10 sm:mt-20 mt-20'>
         <h1 className='Header hero my-10 mb-20 sm:mb-15'>I'm Nishant.</h1> 
       </div>
