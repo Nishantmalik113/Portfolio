@@ -227,13 +227,8 @@ h1,h2,h3{
   transition: all 0.3s ease;
 }
 
-.welcome{
-  overflow: hidden;
-}
-
 .welcome h1,
-.welcome p,
-.welcome img{
+.welcome p{
   -webkit-animation: show-element 1s ease-in;
   animation: show-element 1s ease-in;
 }
@@ -277,6 +272,7 @@ h1,h2,h3{
 .animate-moveUpAndFade {
   animation: moveUpAndFade 2s cubic-bezier(.16,1,.3,1) infinite
 }
+
 
 .tech_stack{
   position: relative;
