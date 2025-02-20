@@ -23,7 +23,7 @@ export default function About(props) {
   })
 
   return (
-    <section className='about flex flex-col relative items-center bg-[radial-gradient(circle at 50% , #3F3F47, #18181B )]'> 
+    <section className='about flex flex-col items-center bg-[radial-gradient(circle at 50% , #3F3F47, #18181B )]'> 
       <div className='px-10 sm:mt-20 mt-20'>
         <h1 className='Header hero my-10 mb-20 sm:mb-15'>I'm Nishant.</h1> 
       </div>
@@ -39,7 +39,8 @@ export default function About(props) {
         </div>
       </div>
       <div className='w-full sm:py-15 py-10 filler'></div>
-      <div className='summary bg-black w-full pb-30'>
+      <div className='summary relative bg-black w-full pb-30'>
+        <div className='noise-overlay'></div>
         <div className='flex flex-col items-center justify-center gap-10 px-10'>
           <p className='hero'><b className='text-[5rem]'>M</b>y journey into tech started when I saw my seniors in school using HTML and motivated by that I started creating a basic website—only 
           to realize I had no idea what I was doing. That led me to Python in high school, which made me more interested towards computers. Then, 
@@ -53,7 +54,8 @@ export default function About(props) {
           <p className='hero'>These days, I'm building my own product and diving into backend development with Node.js, experimenting with Docker and firebase. 
           I believe that passion, curiosity, and plenty of coffee can take you further than a formal degree ever could.</p></div>
       </div>
-      <div className='qualities px-10 bg-gradient-to-b from-[#242429] to-[#18181B] flex flex-col gap-20 items-center justify-center'>
+      <div className='qualities relative px-10 bg-gradient-to-b from-[#242429] to-[#18181B] flex flex-col gap-20 items-center justify-center'>
+      <div className='noise-overlay'></div>
         <h2 className='hero'>I AM</h2>
         <div className='quality-cards  flex lg:flex-row flex-col gap-5 sm:px-20'>
           <div className='flex flex-col gap-5'>
