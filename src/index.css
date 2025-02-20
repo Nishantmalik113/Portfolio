@@ -40,15 +40,17 @@ a{
 
 h1{
   font-size: 6rem;
-
+  overflow: hidden;
 }
 
 h2{
+  overflow: hidden;
   font-size: 5rem;
 }
 
 
 h1,h2,h3{
+  overflow: hidden;
   font-family: 'Fira Code', monospace;
 }
 
@@ -261,10 +263,6 @@ h1,h2,h3{
       transform: translateY(15px);
       opacity: 1
   }
-}
-
-.heading{
-  overflow: hidden;
 }
 
 .animate-moveUpAndFade {
