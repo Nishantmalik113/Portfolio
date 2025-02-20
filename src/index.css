@@ -95,6 +95,7 @@ h1,h2,h3{
 }
 .noise-overlay {
   z-index: 399;
+  opacity: 0.5;
   mix-blend-mode: overlay;
   background-image: url(../noise.png);
   background-position: 0 0;
