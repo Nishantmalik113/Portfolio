@@ -227,6 +227,10 @@ h1,h2,h3{
   transition: all 0.3s ease;
 }
 
+.welcome{
+  overflow: hidden;
+}
+
 .welcome h1,
 .welcome p,
 .welcome img{
