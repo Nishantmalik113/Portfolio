@@ -6,6 +6,11 @@
   transition: 0.2s ease-in-out;
   overflow-x: hidden;
 }
+
+div{
+  overflow: hidden ;
+}
+
 *::-webkit-scrollbar{
   display: none;
 }
