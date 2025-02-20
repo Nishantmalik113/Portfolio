@@ -31,7 +31,7 @@ export default function Hero(props) {
         <div className='absolute top-[130vh] md:top-[110vh] left-0 z-20 bg-gradient-to-bl'><img alt="square" loading="lazy" width="96" height="96" decoding="async" data-nimg="1" src="../square.svg" /></div>
         <div className='absolute rotate-270 top-[110vh] md:top-[90vh] right-[10vh] md:right-[20vh] z-20 bg-gradient-to-bl'><img alt="square" loading="lazy" width="96" height="96" decoding="async" data-nimg="1" src="../square.svg" /></div>
         <div className='absolute rotate-270 top-[130vh] md:top-[110vh] right-0 z-20 bg-gradient-to-bl'><img alt="square" loading="lazy" width="96" height="96" decoding="async" data-nimg="1" src="../square.svg" /></div>
-        <div className='Current_Stack hero flex flex-col gap-10 items-center jutify-center'>
+        <div className='Current_Stack hero flex flex-col gap-10 items-center justify-center'>
             <h2 className='heading hero'>Current Stack</h2>
             <p>A small list of cool things I use to construct my projects.</p>
             <div className='tech_stack hero grid grid-cols-2 sm:grid-cols-3'>
