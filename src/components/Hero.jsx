@@ -5,15 +5,24 @@ import Project from './Project'
 
 export default function Hero(props) {
   const{setPage} = props
-  setPage('hero')
-  let ScrollContainer = document.querySelector(".project-cards ")
-  const [width, setWidth] = useState(0)
-  const refContainer = useRef();
-  useEffect(() => {
-      if (refContainer.current) {
-          setWidth(refContainer.current.offsetWidth + 16)
-      }
-  }, []);
+  
+
+  useEffect(()=>{
+    setPage('hero')
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach((entry)=>{
+          if(entry.isIntersecting){
+              entry.target.classList.add('show');
+          }
+      });
+  });
+  
+  
+  
+  const hiddenElements = document.querySelectorAll('.hero');
+  hiddenElements.forEach((el)=> observer.observe(el));
+  })
+
   
   return (
     <section  className='px-10 flex flex-col gap-5 sm:gap-30 items-center justify-center bg-[radial-gradient(circle at 50% , #3F3F47, #18181B)]'>
