@@ -456,6 +456,40 @@ h1,h2,h3{
   font-size: 1.8rem;
 }
 
+.achievements button:hover{
+  cursor: var(--app-cursor-pointer), auto;
+}
+
+.achievement-box{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 32.5%;
+  gap: 1rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.achievement-card{
+  border: 1px solid #3F3F47;
+  border-radius: 30px;
+  background: radial-gradient(ellipse 80% 80% at 50% -20%,#35353b, transparent);
+}
+.achievement-card:hover{
+  background: radial-gradient(ellipse 80% 80% at 25% -10%, gold, transparent);
+  transition: 1s ease-in-out;
+}
+
+.achievement-card img{
+  max-width: 350px;
+}
+
+.achievement-card h4{
+  color: beige;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
 
 @media screen and (max-width: 640px) {
 
@@ -577,11 +611,28 @@ h2{
 .ME h3{
   font-size: 1rem;
 }
+.achievement-card h3{
+  font-size: 1rem;
+}
 
 .card h4{
   margin-top: 50px;
   font-size: 1rem;
   font-weight: 600;
+}
+
+.achievement-box img{
+  width: 250px;
+}
+
+.achievement-box{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+
+.achievements button{
+  display: none
 }
 
 }

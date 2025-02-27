@@ -15,3 +15,12 @@ export const tech_stack =[
 ]
 
 export const greeting = ['','Hello','Bonjour','Ciao','Ol\xe0','स्वागत हे','سلام','やあ','Hallo']
+
+export const achievements = [
+    {'id':'1', 'name' : 'Saarang`25', 'img' : '../Achievements/Best_Directors.png' , 'desc':'Won the Best-Director award for my self-written play `MEGH`. ','link':'../Achievements/Best_Directors.pdf'},
+    {'id':'2', 'name' : 'Festember`25', 'img' : '../Achievements/NIT_TRICHY.png' , 'desc':'Won the Best-Play award for my first directed play at NIT Trichy.','link':'../Achievements/NIT_TRICHY.pdf'},
+    {'id':'3', 'name' : 'Saarang`24', 'img' : '../Achievements/IIT_M.png' , 'desc':'Won the Best-Play award for a play where I was one of the actors at IIT Madras.','link':'../Achievements/IIT_M.pdf'},
+    {'id':'4', 'name' : 'MOOD INDIGO`23', 'img' : '../Achievements/IIT_B.png' , 'desc':'Finalist at Street-Play Competetion(Aaghaz) as a cast member at IIT Bombay','link':'../Achievements/IIT_B.pdf'},
+    {'id':'5', 'name' : 'Rendevouz`23', 'img' : '../Achievements/IIT_D.png' , 'desc':'Won the 2nd Prize for Mime-Time Competetion at IIT Delhi.','link':'../Achievements/IIT_D.pdf'},
+    {'id':'6', 'name' : 'Sri Narayani', 'img' : '../Achievements/SRI_N.png' , 'desc':'Won the Best-Play award at a regional skit making competetion.','link':'../Achievements/SRI_N.pdf'}
+]

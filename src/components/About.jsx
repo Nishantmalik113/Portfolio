@@ -1,13 +1,16 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import { achievements } from '../utils';
 
 export default function About(props) {
 
   const {setPage} = props
-  
-  window.scrollTo(0,0)
+  let ScrollContainer = document.querySelector(".achievement-box")
+  const [width, setWidth] = useState(0)
+  const refContainer = useRef();
 
   useEffect(()=>{
     setPage('about')
+
     const observer = new IntersectionObserver((entries)=>{
       entries.forEach((entry)=>{
           if(entry.isIntersecting){
@@ -16,11 +19,12 @@ export default function About(props) {
       });
   });
   
-  
-  
   const heroElements = document.querySelectorAll('.hero');
   heroElements.forEach((el)=> observer.observe(el));
-  })
+  if (refContainer.current) {
+    setWidth(refContainer.current.offsetWidth + 16)
+}  
+}, [])
 
   return (
     <section className='about flex flex-col items-center bg-[radial-gradient(circle at 50% , #3F3F47, #18181B )]'> 
@@ -54,7 +58,7 @@ export default function About(props) {
           <p className='hero'>These days, I'm building my own product and diving into backend development with Node.js, experimenting with Docker and firebase. 
           I believe that passion, curiosity, and plenty of coffee can take you further than a formal degree ever could.</p></div>
       </div>
-      <div className='qualities relative px-10 bg-gradient-to-b from-[#242429] to-[#18181B] flex flex-col gap-20 items-center justify-center'>
+      <div className='qualities relative px-10 pb-30 bg-gradient-to-b from-[#242429] to-[#18181B] flex flex-col gap-20 items-center justify-center'>
       <div className='noise-overlay'></div>
         <h2 className='hero'>I AM</h2>
         <div className='quality-cards  flex lg:flex-row flex-col gap-5 sm:px-20'>
@@ -89,6 +93,38 @@ export default function About(props) {
           </div>
         </div>
 
+      </div>
+      <div className='w-full relative px-10 sm:pb-30 bg-gradient-to-b from-[#18181B] to-[#242429] flex flex-col gap-20 items-center justify-center'>
+        <div className='noise-overlay'></div>
+        <h2 className='hero'>Achievements</h2>
+        <div className='flex flex-col gap-10 achievements relative'>
+          <div ref={refContainer} className='sm:mx-10 achievement-box '>
+            {achievements.map((option, optionIndex)=>{
+              return(
+                  <a key={optionIndex} target='black' href={option.link} className='hero text-center px-10 flex flex-col gap-5 p-5 items-center justify-center achievement-card '>
+                  <h4>{option.name}</h4>
+                  <img src={option.img} alt=""/>
+                  <p>{option.desc}</p>
+                </a>
+              )
+            })}
+            </div>
+            <button className='absolute top-60 bg-white rounded-[50%] w-15 ' onClick={()=>{
+                      ScrollContainer.style.scrollBehavior = "smooth"
+                      ScrollContainer.scrollLeft -= width
+                  }}><img src="../left-arrow.png" alt="" /></button>
+            <button className='absolute right-0 top-60 bg-white rounded-[50%] w-15' onClick={()=>{
+                      ScrollContainer.style.scrollBehavior = "smooth"
+                      ScrollContainer.scrollLeft += width
+                  }} ><img src="../right-arrow.png" alt="" /></button>
+        </div>
+      </div>
+      <div className='relative flex flex-col gap-20 items-center justify-center w-full px-10 sm:pb-30 bg-gradient-to-t from-[#18181B] to-[#242429] '>
+        <div className='noise-overlay'></div>
+        <div className='flex flex-col items-center justify-center'>
+          <h2 className='hero'>Testimonials</h2>
+          <p>What 'People' say about me.</p>
+        </div>
       </div>
     </section>
   )

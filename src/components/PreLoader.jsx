@@ -10,8 +10,7 @@ export default function PreLoader() {
       var i = 0;                  //  set your counter to 1
       function myLoop() {         //  create a loop function
         setTimeout(function() {   //  call a 3s setTimeout when the loop is called
-          greet.innerText=`.${greeting[i]}`
-          console.log(greeting[i]);  //  your code here
+          greet.innerText=`.${greeting[i]}` //  your code here
           i++;                    //  increment the counter
           if (i < 9) {           //  if the counter < 10, call the loop function
             myLoop();             //  ..  again which will trigger another 
