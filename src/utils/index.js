@@ -24,3 +24,17 @@ export const achievements = [
     {'id':'5', 'name' : 'Rendevouz`23', 'img' : '../Achievements/IIT_D.png' , 'desc':'Won the 2nd Prize for Mime-Time Competetion at IIT Delhi.','link':'../Achievements/IIT_D.pdf'},
     {'id':'6', 'name' : 'Sri Narayani', 'img' : '../Achievements/SRI_N.png' , 'desc':'Won the Best-Play award at a regional skit making competetion.','link':'../Achievements/SRI_N.pdf'}
 ]
+
+export const testimonials1 =[
+    {'name':'Shailesh Singh','img':'../Achievements/Best_Directors.png','desc':'hello '},
+    {'name':'Aryan Balaji Pathak','img':'../Achievements/Best_Directors.png','desc':'hello '},
+    {'name':'Parth Singh','img':'../Achievements/Best_Directors.png','desc':'hello '},
+    {'name':'Swapneel Chatterjee','img':'../Achievements/Best_Directors.png','desc':'hello '}
+]
+
+export const testimonials2 =[
+    {'name':'Ananya Pandey','img':'../Achievements/Best_Directors.png','desc':'hello '},
+    {'name':'Sanidhya Agarwal','img':'../Achievements/Best_Directors.png','desc':'hello '},
+    {'name':'Soumya Jha','img':'../Achievements/Best_Directors.png','desc':'hello '},
+    {'name':'Abhishek Agarwal','img':'../Achievements/Best_Directors.png','desc':'hello '}
+]

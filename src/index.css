@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 *{
   font-family: 'Poppins', sans-serif;
   color: white;
@@ -475,7 +474,7 @@ h1,h2,h3{
   background: radial-gradient(ellipse 80% 80% at 50% -20%,#35353b, transparent);
 }
 .achievement-card:hover{
-  background: radial-gradient(ellipse 80% 80% at 25% -10%, gold, transparent);
+  background: radial-gradient(ellipse 80% 80% at 25% -10%, lightblue, transparent);
   transition: 1s ease-in-out;
 }
 
@@ -483,12 +482,46 @@ h1,h2,h3{
   max-width: 350px;
 }
 
+.achievement-card:hover h4{
+  color: white;
+}
+
 .achievement-card h4{
-  color: beige;
+  color: lightblue;
   font-size: 2rem;
   font-weight: 600;
 }
 
+/*Testimonials*/
+
+.testimonial{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-inline: 10px;
+  padding: 10px;
+  border: 1px solid #3F3F47;
+  border-radius: 30px;
+  background: radial-gradient(ellipse 80% 80% at 50% -20%,#35353b, transparent);
+}
+
+.testimonial h4{
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  color: beige;
+  font-family: 'Fira Code', 'monospace';
+}
+
+.testimonial p{
+  text-align: center;
+  font-weight: 400;
+  color: rgb(218, 218, 248);
+}
+
+.testimonial:hover{
+  background: radial-gradient(ellipse 80% 80% at 50% -20%, yellow, transparent);
+}
 
 
 @media screen and (max-width: 640px) {
