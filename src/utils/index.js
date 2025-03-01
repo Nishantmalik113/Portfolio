@@ -26,15 +26,15 @@ export const achievements = [
 ]
 
 export const testimonials1 =[
-    {'name':'Shailesh Singh','img':'../Achievements/Best_Directors.png','desc':'hello '},
-    {'name':'Aryan Balaji Pathak','img':'../Achievements/Best_Directors.png','desc':'hello '},
-    {'name':'Parth Singh','img':'../Achievements/Best_Directors.png','desc':'hello '},
-    {'name':'Swapneel Chatterjee','img':'../Achievements/Best_Directors.png','desc':'hello '}
+    {'name':'Shailesh Singh', 'post':'Design Lead at Interact | 3rd Year Undergrad at VIT University ','img':'../testimonials/shailesh.jpg','desc':'I had the pleasure of working with Nishant Malik during a hackathon, where he showcased exceptional frontend development skills and a strong sense of teamwork. He is highly adaptable, proactive, and always ready to support the team.'},
+    {'name':'Aryan Balaji Pathak', 'post':'Product Designer | An aspiring storyteller','img':'../testimonials/aryan.jpg','desc':'hello '},
+    {'name':'Parth Singh', 'post':'Actor @ VIT DRAMATICS | BTech CSE Student at VIT University','img':'../testimonials/parth.jpg','desc':'I had the privilege of working with Nishant Malik on multiple theatre projects under his direction. Nishant`s greatest strength lies in his ability to lead with empathy—he actively listens, understands different perspectives, and fosters a collaborative space for creativity to thrive.'},
+    {'name':'Swapneel Chatterjee', 'post':'Director @ VIT DRAMATICS | Aspiring Electrical and Electronics Engineer','img':'../testimonials/swapneel.jpg','desc':'I worked with Nishant Malik as my co-director in multiple plays, where he displayed remarkable dedication, creativity, and leadership. Nishant`s strong communication skills allow him to act as the perfect bridge between the cast and crew.'}
 ]
 
 export const testimonials2 =[
-    {'name':'Ananya Pandey','img':'../Achievements/Best_Directors.png','desc':'hello '},
-    {'name':'Sanidhya Agarwal','img':'../Achievements/Best_Directors.png','desc':'hello '},
-    {'name':'Soumya Jha','img':'../Achievements/Best_Directors.png','desc':'hello '},
-    {'name':'Abhishek Agarwal','img':'../Achievements/Best_Directors.png','desc':'hello '}
+    {'name':'Ananya Pandey', 'post':'Actor @ VIT DRAMATICS | Research Student VIT Vellore | Partner','img':'../testimonials/ananya.png','desc':'hello '},
+    {'name':'Sanidhya Agarwal', 'post':'Current Recruiter | Founder @ VALSCO TECHNOLOGY','img':'../testimonials/sanidhya.jpeg','desc':'hello '},
+    {'name':'Soumya Jha', 'post':'Associate at PwC | CSE graduate from VIT Vellore','img':'../testimonials/soumya.jpg','desc':'hello '},
+    {'name':'Neha Malik', 'post':'XLRI Delhi BM`26 | Consultant | Telesto Strategy | Miranda House','img':'../testimonials/neha.jpg','desc':'hello '}
 ]

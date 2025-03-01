@@ -120,7 +120,7 @@ export default function About(props) {
                   }} ><img src="../right-arrow.png" alt="" /></button>
         </div>
       </div>
-      <div className='relative flex flex-col gap-20 items-center justify-center w-full sm:pb-30 bg-gradient-to-t from-[#18181B] to-[#242429] '>
+      <div className='relative flex flex-col items-center justify-center w-full sm:pb-30 bg-gradient-to-t from-[#18181B] to-[#242429] '>
         <div className='noise-overlay'></div>
         <div className='flex flex-col items-center justify-center'>
           <h2 className='hero'>Testimonials</h2>
