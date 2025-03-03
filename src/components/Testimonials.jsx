@@ -14,7 +14,7 @@ export default function Testimonials() {
             {testimonials1.map((option,optionIndex)=>{
                 return(
                     <div key={optionIndex} className='testimonial'>
-                        <div className='grid grid-cols-3 items-center'>
+                        <div className='grid grid-cols-3 sm:gap-0 gap-10 items-center'>
                             <img src={option.img} alt="" className='max-w-[100px] rounded-[50%]'/>
                             <div className='flex flex-col col-span-2'>
                                 <h4>{option.name}</h4>
@@ -31,7 +31,7 @@ export default function Testimonials() {
         {testimonials2.map((option,optionIndex)=>{
             return(
                 <div key={optionIndex} className='testimonial'>
-                    <div className='grid grid-cols-3 items-center'>
+                    <div className='grid grid-cols-3 sm:gap-0 gap-10 items-center'>
                         <img src={option.img} alt="" className='max-w-[100px] rounded-[50%]'/>
                         <div className='flex flex-col col-span-2'>
                             <h4>{option.name}</h4>

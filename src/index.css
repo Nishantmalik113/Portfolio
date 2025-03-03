@@ -393,7 +393,8 @@ h1,h2,h3{
   animation: show-element 0.5s ease-in;
 }
 
-.about h1{
+.about h1,
+.hire h1{
   font-size: 7rem;
   font-weight: 600;
   line-height: 120%;
@@ -532,6 +533,28 @@ h1,h2,h3{
 }
 
 
+/*Hire Me*/
+
+.hire input,
+.hire textarea{
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hire button:hover{
+  color: lightblue;
+  transform: translateY(-3px);
+  cursor: var(--app-cursor-pointer), default;
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 640px) {
 
 p{
@@ -640,6 +663,14 @@ h2{
 
 /*About*/
 
+.about h1,
+.hire h1{
+  font-size: 3rem;
+  line-height: normal;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+
 .about .Header{
   font-size: 4rem;
   letter-spacing: 0;
@@ -674,6 +705,15 @@ h2{
 
 .achievements button{
   display: none
+}
+
+.testimonial{
+  width: 300px;
+  height: 310px;
+  padding: 10px;
+}
+.testimonial h4{
+  font-size: 1rem;
 }
 
 }

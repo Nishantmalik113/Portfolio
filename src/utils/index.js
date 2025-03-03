@@ -35,6 +35,6 @@ export const testimonials1 =[
 export const testimonials2 =[
     {'name':'Ananya Pandey', 'post':'Actor @ VIT DRAMATICS | Research Student VIT Vellore | Partner','img':'../testimonials/ananya.png','desc':'hello '},
     {'name':'Sanidhya Agarwal', 'post':'Current Recruiter | Founder @ VALSCO TECHNOLOGY','img':'../testimonials/sanidhya.jpeg','desc':'hello '},
-    {'name':'Soumya Jha', 'post':'Associate at PwC | CSE graduate from VIT Vellore','img':'../testimonials/soumya.jpg','desc':'hello '},
+    {'name':'Soumya Jha', 'post':'Associate at PwC | CSE graduate from VIT Vellore','img':'../testimonials/soumya.jpg','desc':'During various events, I had the pleasure of working alongside Nishant, and I was consistently impressed by his hard work, team spirit, and leadership. Nishant brings an infectious energy to the team, creating a positive and enjoyable working environment for everyone.'},
     {'name':'Neha Malik', 'post':'XLRI Delhi BM`26 | Consultant | Telesto Strategy | Miranda House','img':'../testimonials/neha.jpg','desc':'hello '}
 ]
