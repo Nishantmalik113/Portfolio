@@ -15,7 +15,7 @@ export default function Testimonials() {
                 return(
                     <div key={optionIndex} className='testimonial'>
                         <div className='grid grid-cols-3 sm:gap-0 gap-10 items-center'>
-                            <img src={option.img} alt="" className='max-w-[100px] rounded-[50%]'/>
+                            <img src={option.img} alt="" className='sm:max-w-[100px] max-w-[80px] rounded-[50%]'/>
                             <div className='flex flex-col col-span-2'>
                                 <h4>{option.name}</h4>
                                 <p>{option.post}</p>
@@ -32,7 +32,7 @@ export default function Testimonials() {
             return(
                 <div key={optionIndex} className='testimonial'>
                     <div className='grid grid-cols-3 sm:gap-0 gap-10 items-center'>
-                        <img src={option.img} alt="" className='max-w-[100px] rounded-[50%]'/>
+                        <img src={option.img} alt="" className='sm:max-w-[100px] max-w-[80px] rounded-[50%]'/>
                         <div className='flex flex-col col-span-2'>
                             <h4>{option.name}</h4>
                             <p>{option.post}</p>

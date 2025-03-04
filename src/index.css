@@ -709,11 +709,16 @@ h2{
 
 .testimonial{
   width: 300px;
-  height: 310px;
+  height: 220px;
   padding: 10px;
 }
+
 .testimonial h4{
   font-size: 1rem;
+}
+
+.testimonial p{
+  font-size: 0.7rem;
 }
 
 }
