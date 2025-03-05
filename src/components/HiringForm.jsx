@@ -3,6 +3,7 @@ import { collection, doc, getFirestore, setDoc } from 'firebase/firestore'
 import { db } from '../firebase'
 
 export default function HiringForm(props) {
+  window.scrollTo(0,0)
   const {setPage} = props
 
   const [name, setName] = useState('')
@@ -63,7 +64,7 @@ export default function HiringForm(props) {
         <div className='sm:p-0 p-5 w-full h-full flex flex-col items-center justify-center bg-slate-800 sm:rounded-l-xl '>
           <img src="../Achievements/IIT_M.png" alt="" className='hero w-[250px] sm:w-[350px] rounded-xl'/>
         </div>
-        <div className=' flex flex-col gap-1 bg-zinc-800 p-10'>
+        <div className=' flex flex-col gap-1 bg-slate-800 p-10'>
           <h3 className='text-[2rem] font-semibold text-slate-500'>Contact Me</h3>
           <div className='hero flex flex-col gap-5 item-center justify-center'>
             <input type="text" value={name} placeholder='Name' onChange={(e)=>{setName(e.target.value)}} className='focus:outline-none' />

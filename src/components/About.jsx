@@ -3,7 +3,7 @@ import { achievements } from '../utils';
 import Testimonials from './Testimonials';
 
 export default function About(props) {
-
+  window.scrollTo(0,0)
   const {setPage} = props
   let ScrollContainer = document.querySelector(".achievement-box")
   const [width, setWidth] = useState(0)

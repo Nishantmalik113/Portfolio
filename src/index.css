@@ -537,8 +537,8 @@ h1,h2,h3{
 
 .hire input,
 .hire textarea{
-  background-color: white;
-  color: black;
+  background-color: slategray;
+  color: white;
   padding: 10px;
   border-radius: 10px;
 }
