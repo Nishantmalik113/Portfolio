@@ -59,9 +59,9 @@ export default function Hero(props) {
         <div className='Work hero flex flex-col items-center justify-center gap-10'>
           <h2 className='heading'>Recent projects</h2>
             <div className='project-cards hero flex flex-col gap-20 px-1'>
-            <Project id={'project-card2'} image={'../projects/vision.png'} link={'https://vision-scribe.netlify.app/'} title={'VisionScribe'} color={'radial-gradient(circle at 50% 0%, rgba(225, 29, 218, 0.69), rgb(26, 26, 26))'} desc={'An audio transcription and translation website using Web Workers.'}/>
-            <Project id={'project-card1'} image={'../projects/coffee.png'} link={'https://caffiend-nishant.netlify.app/'} title={'Caffiend'} color={'radial-gradient(circle at 50% 0%, rgba(165, 106, 106, 0.99), rgb(26, 26, 26))'} desc={'A Full stack Coffee Tracking website using firebase.'}/>
-            <Project id={'project-card3'} image={'../projects/forte.png'} link={'https://forte-workout-planner.netlify.app/'} title={'Forte'} color={'radial-gradient(circle at 50% 0%, rgba(236, 125, 46, 0.69), rgb(26, 26, 26))'} desc={'A Workout Planner website.'}/>
+              <Project id={'project-card3'} image={'../projects/broodl.png'} link={'https://broodl-nishant.netlify.app/'} title={'Broodl'} color={'radial-gradient(circle at 50% 0%, rgba(63,81,181, 0.69), rgb(26, 26, 26))'} desc={'A full-stack Next.js app that helps users track their mood daily.'}/>
+              <Project id={'project-card2'} image={'../projects/vision.png'} link={'https://vision-scribe.netlify.app/'} title={'VisionScribe'} color={'radial-gradient(circle at 50% 0%, rgba(225, 29, 218, 0.69), rgb(26, 26, 26))'} desc={'An audio transcription and translation website using Web Workers.'}/>
+              <Project id={'project-card1'} image={'../projects/coffee.png'} link={'https://caffiend-nishant.netlify.app/'} title={'Caffiend'} color={'radial-gradient(circle at 50% 0%, rgba(165, 106, 106, 0.99), rgb(26, 26, 26))'} desc={'A Full stack Coffee Tracking website using firebase.'}/>
             </div>
         </div>
         <div className='hero flex flex-col gap-10 items-center justify-center'>
