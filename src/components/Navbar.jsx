@@ -29,7 +29,7 @@ export default function Navbar(props) {
             <a href="/#/about" className={(page==='about')? 'bg-[rgba(255,255,255,0.1)]' :''}>About</a>
             <a href="/#/hire" className={(page==='hire')? 'bg-[rgba(255,255,255,0.1)]' :''}>Hire Me</a>
             {showResume && (<div className='border-l-3 border-black h-full'></div>)}
-            {showResume && (<a className='resumebtn bg-radial from-slate-600 from-60% to-white' target='black' href="../docs/Nishant-Malik.pdf">Resume</a>)}
+            {showResume && (<a className='resumebtn bg-radial from-slate-600 from-60% to-white' target='black' href="../docs/resume.pdf">Resume</a>)}
             </div>
     </section>
   )

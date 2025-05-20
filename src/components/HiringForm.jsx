@@ -76,7 +76,7 @@ export default function HiringForm(props) {
         <div className='hero flex flex-col gap-10 justify-center sm:rounded-r-xl p-10 bg-slate-800'>
           <div className='hero flex flex-col gap-1 ml-10'>
             <h3>Email Me?</h3>
-            <p>nishantmalik113@gmail.com</p>
+            <a href='mailto:nishantmalik113@gmail.com'>nishantmalik113@gmail.com</a>
           </div>
           <div className='hero flex flex-col gap-1 ml-10'>
             <h3>Locate Me</h3>
