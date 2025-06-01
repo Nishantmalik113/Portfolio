@@ -32,7 +32,7 @@ export default function HiringForm(props) {
     }catch(err){
       console.log(err.message)
     }finally{
-      toast("Message Has been sumbitted..... Thank you for reaching out to me.",{icon:'👍', duration:'600'})
+      toast("Message Has been sumbitted..... Thank you for reaching out to me.",{icon:'👍'})
       setName('')
       setEmail('')
       setMessage('')
