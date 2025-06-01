@@ -6,6 +6,7 @@ import About from './components/About'
 import Hero from './components/Hero'
 import Footer from './components/Footer'
 import PreLoader from './components/PreLoader'
+import { Toaster } from 'react-hot-toast'
 
 function App() {
   const[page , setPage] = useState('hero')
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <>
+    <Toaster/>
     {loading &&(<PreLoader/>)}
     {!loading &&(<section>
       <div className='bg-zinc-900'>

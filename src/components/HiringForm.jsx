@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { collection, doc, getFirestore, setDoc } from 'firebase/firestore'
 import { db } from '../firebase'
+import toast, { Toaster } from 'react-hot-toast'
 
 export default function HiringForm(props) {
   window.scrollTo(0,0)
@@ -9,6 +10,7 @@ export default function HiringForm(props) {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [isSumbitting, setIsSumbmitting] = useState(false)
 
   async function handleSubmit(){
     if(!name || !email || !email.includes('@') || !message){
@@ -16,6 +18,7 @@ export default function HiringForm(props) {
     }
     
     try{
+      setIsSumbmitting(true)
       const userRef = doc(db , 'contacts', email)
         const res = await setDoc(userRef,{
           email: email,
@@ -29,10 +32,11 @@ export default function HiringForm(props) {
     }catch(err){
       console.log(err.message)
     }finally{
-      alert("Message Has been sumbitted.....Thank you for reaching out to me.👍")
+      toast("Message Has been sumbitted..... Thank you for reaching out to me.",{icon:'👍', duration:'600'})
       setName('')
       setEmail('')
       setMessage('')
+      setIsSumbmitting(false)
     }
   }
 
@@ -70,7 +74,7 @@ export default function HiringForm(props) {
             <input type="text" value={name} placeholder='Name' onChange={(e)=>{setName(e.target.value)}} className='focus:outline-none' />
             <input type="text" value={email} placeholder='Email' onChange={(e)=>{setEmail(e.target.value)}} className='focus:outline-none' />
             <textarea type="text" value={message}  placeholder='Message' onChange={(e)=>{setMessage(e.target.value)}} className='h-[100px] text-top focus:outline-none'/>
-            <button onClick={handleSubmit}  className='text-xl font-semibold'>Connect</button>
+            <button onClick={handleSubmit}  className='text-xl font-semibold'>{(isSumbitting) ? 'Submitting':'Connect'}</button>
           </div>
         </div>
         <div className='hero flex flex-col gap-10 justify-center sm:rounded-r-xl p-10 bg-slate-800'>
