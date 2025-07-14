@@ -110,7 +110,7 @@ export default function About(props) {
               )
             })}
             </div>
-            <button className='absolute top-60 bg-white rounded-[50%] w-15 ' onClick={()=>{
+            <button className='absolute left-0 top-60 bg-white rounded-[50%] w-15 ' onClick={()=>{
                       ScrollContainer.style.scrollBehavior = "smooth"
                       ScrollContainer.scrollLeft -= width
                   }}><img src="../left-arrow.png" alt="" /></button>
