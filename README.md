@@ -20,4 +20,4 @@ I'm Nishant Malik, a Computer Science student at VIT Vellore with a passion for 
 - Vercel (for deployment)
 
 ## Visit:
-https://nishant-malik.netlify.app/
+https://nishant-malik.com
